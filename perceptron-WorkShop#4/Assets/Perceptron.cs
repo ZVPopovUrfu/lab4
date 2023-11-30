@@ -35,7 +35,7 @@ public class Perceptron : MonoBehaviour {
 		return d;
 	}
 
-	double CalcOutput(int i)
+	public double CalcOutput(int i)
 	{
 		double dp = DotProductBias(weights,ts[i].input);
 		if(dp > 0) return(1);
@@ -62,7 +62,7 @@ public class Perceptron : MonoBehaviour {
 		bias += error;
 	}
 
-	double CalcOutput(double i1, double i2)
+	public double CalcOutput(double i1, double i2)
 	{
 		double[] inp = new double[] {i1, i2};
 		double dp = DotProductBias(weights,inp);
@@ -70,7 +70,7 @@ public class Perceptron : MonoBehaviour {
 		return (0);
 	}
 
-	void Train(int epochs)
+	public void Train(int epochs)
 	{
 		InitialiseWeights();
 		
@@ -87,11 +87,11 @@ public class Perceptron : MonoBehaviour {
 	}
 
 	void Start () {
-		Train(8);
-		Debug.Log("Test 0 0: " + CalcOutput(0,0));
-		Debug.Log("Test 0 1: " + CalcOutput(0,1));
-		Debug.Log("Test 1 0: " + CalcOutput(1,0));
-		Debug.Log("Test 1 1: " + CalcOutput(1,1));		
+		//Train(8);
+		//Debug.Log("Test 0 0: " + CalcOutput(0,0));
+		//Debug.Log("Test 0 1: " + CalcOutput(0,1));
+		//Debug.Log("Test 1 0: " + CalcOutput(1,0));
+		//Debug.Log("Test 1 1: " + CalcOutput(1,1));		
 	}
 	
 	void Update () {

@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Perceptron.cs" />
+    <Compile Include="Assets\ChangeColor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
